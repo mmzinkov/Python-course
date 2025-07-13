@@ -16,3 +16,20 @@ alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
 
 > Подсказка: Используйте оператор +=
 """
+
+alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+
+phrase = alphabet[-1].upper() # Я
+phrase += " "
+phrase += alphabet[9:7:-1] # из
+phrase += alphabet[20:21] # у
+phrase += alphabet[24:25] # ч
+phrase += alphabet[:1] # а
+phrase += alphabet[-2:-1:] # ю
+phrase += " "
+phrase += alphabet[16:17] # п
+phrase += alphabet[9:10] # и
+phrase += alphabet[19:20] # т
+phrase += alphabet[15:13:-1] # он
+
+print(phrase)
