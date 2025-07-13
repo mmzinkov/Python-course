@@ -26,3 +26,30 @@
 > Распечатайте только целую часть полученного числа. Рядом с выводом напишите
 комментарий - целую часть полученного числа.
 """
+
+balance = 100000
+annual_percentage = 0.15 # 15% годовых
+monthly_rate = annual_percentage / 12 # ежемесячная ставка
+months = ['february', 'march', 'april', 'may', 'june', 'july', 'august', 'september']
+monthly_operations = [6, 15, 25]
+
+for month in months:
+    min_balance = balance
+
+    for day in monthly_operations:
+        if day == 15:
+            if month == "july":
+                balance += 60000 # дополнительное пополнение в июле
+
+            if month == "august":
+                balance -= 20000 # снятие в августе
+        else:
+            balance += 15000 # обычные взносы
+
+        if balance < min_balance:
+            min_balance = balance
+
+    interest = min_balance * monthly_rate
+    balance += interest
+
+print(int(balance)) # 402411

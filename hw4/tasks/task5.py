@@ -16,3 +16,10 @@
 > Подсказка: перенос строки можно сделать с помощью символа \n.
   Например: result = 'Привет!' + '\n'
 """
+
+simbol_star = "*"
+simbol_star_x11 = simbol_star * 11
+
+result = f"{simbol_star_x11}\n{simbol_star} Привет, {simbol_star}\n{simbol_star}  мир!   {simbol_star}\n{simbol_star_x11}"
+
+print(result)
