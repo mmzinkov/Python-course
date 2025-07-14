@@ -34,3 +34,11 @@ olleH
 End
 dnE
 """
+
+while True:
+    user_input = input()
+
+    print(user_input[::-1])
+
+    if user_input.lower() == "end":
+        break
