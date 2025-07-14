@@ -20,3 +20,11 @@
 8
 10
 """
+
+user_input = int(input())
+
+if user_input < 0 or user_input > 100:
+    print("Число должно быть больше или равно 0 и не больше 100")
+else:
+    for i in range(0, user_input + 1, 2):  # + 1 чтобы вывод был включительно
+        print(i)
