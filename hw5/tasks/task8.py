@@ -25,3 +25,12 @@
 Вывод:
 0
 """
+
+number1 = int(input("Введите число 1: "))
+number2 = int(input("Введите число 2: "))
+
+try:
+    result = number1 // number2
+    print(result)
+except ZeroDivisionError:
+    print("Деление на 0 невозможно")
