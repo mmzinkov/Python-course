@@ -17,3 +17,20 @@
 2. Выполните функцию, передав ей нужные аргументы.
 3. Распечатайте результат вызова функции.
 """
+
+
+def get_answer(question):
+    question_lower = question.lower()
+
+    if "маруся" in question_lower:
+        return "Мяу..."
+    else:
+        return "..."
+
+
+if __name__ == '__main__':
+    question = input()
+
+    result = get_answer(question)
+
+    print(result)
