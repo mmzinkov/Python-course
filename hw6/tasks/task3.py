@@ -16,3 +16,18 @@
 только с аргументом b, с обоими аргументами, с именованными аргументами.
 2. Распечатайте результат каждого вызова функции.
 """
+
+
+def get_solution_linear_equation(a=5.0, b=10.0):
+    try:
+        return b / a
+    except ZeroDivisionError:
+        return "Деление на 0 невозможно"
+
+
+if __name__ == '__main__':
+    print(get_solution_linear_equation())  # Без аргументов
+    print(get_solution_linear_equation(10))  # Только с аргументом a
+    print(get_solution_linear_equation(b = 20))  # Только с аргументом b
+    print(get_solution_linear_equation(1, 2))  # С обоими аргументами
+    print(get_solution_linear_equation(b = 5, a = 0))  # С именованными аргументами
